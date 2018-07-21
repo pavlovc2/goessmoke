@@ -1,5 +1,5 @@
 # goessmoke
-Smoke dispersion modeling for goes fire detections 
+Smoke dispersion modeling for GOES-16 fire detections 
 
 ## Purpose
 This repository provides an easy pipeline to 

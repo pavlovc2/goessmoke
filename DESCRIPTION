@@ -1,0 +1,9 @@
+Package: goessmoke
+Title: Smoke dispersion modeling for GOES-16 fire detections
+Version: 0.0.0.9000
+Authors@R: person("Nathan", "Pavlovic", email = "nathan.pavlovic@gmail.com", role = c("aut", "cre"))
+Description: This package uses the HYSPLIT dispersion model to calculate air quality impacts of smoke emissions calculated using GOES-16 fire detections. Users can set the desired input meteorology to support the HYSPLIT dispersion runs. The modeled dispersion results can be compared with PM2.5 surface measurements from EPA AirNow
+Depends: R (>= 3.5.1)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
