@@ -15,6 +15,34 @@ hotspot2disp <- function(in_df, out_format, config_file) {
 			Expect 1 header row and one config row.")
 	}
 	if (out_format == "df") {
+		# TODO: Calculate SEV plume rise
+		plume_height <- 
+
+		# TODO Calculate range based on max distance from fire
+
+		# Create data frame
+		out_dat <- data.frame(
+			rate = 
+			duration = 
+			fire_start_day = 
+			fire_start_hour = 
+			pdiam = 1,
+			density = 1,
+			shape_factor = 1,
+			range = c(),
+			division = c(),
+			lat = in_df$lat
+			lon = in_df$lon
+			height = plume_height
+			duration = config$disphr
+			start_day = as.Date(disp_start) # TODO: Finalize timezone handling
+			start_hour = format(disp_start, "%H")
+			direction = "forward",
+			met_type = "hrrr")
+
+		# Return data.frame
+		return(out_dat)
+
 
 	} else if (out_format == "json") {
 		# TODO: Convert templatejson to internal data as in:
@@ -45,6 +73,9 @@ hotspot2disp <- function(in_df, out_format, config_file) {
 
 		# Today's date
 		today_dat <- as.Date(Sys.time())
+
+		# Find and replace variable names in document
+
 
 	}
 
