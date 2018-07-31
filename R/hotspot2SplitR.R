@@ -74,8 +74,36 @@ hotspot2disp <- function(in_df, out_format, config_file) {
 		# Today's date
 		today_dat <- as.Date(Sys.time())
 
+		# Create fire info 
+		fire_info_all <- NULL
+		for (irow in 1:nrow(in_df)) {
+			event_id <- 
+			start_time <- 
+			end_time <-
+			fire_area <- 
+			fire_ecoregion <-
+			fire_lat <- 
+			fire_lon <- 
+			pm25_tot <-
+			pm_tot <-
+			pm25_tot_flam <- 
+			pm25_tot_smold <-
+			pm25_tot_resid <- 
+			heat_tot <- 
+			heat_tot_flam <- 
+			heat_tot_smold <-
+			heat_tot_resid <-
+			# Insert data into template
+
+			# Append irow to fire_info_all
+		}
+
 		# Find and replace variable names in document
 
+
+		# Insert full fire info
+
+		return(out_dat)
 
 	}
 
