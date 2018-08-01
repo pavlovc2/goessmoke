@@ -77,22 +77,22 @@ hotspot2disp <- function(in_df, out_format, config_file) {
 		# Create fire info 
 		fire_info_all <- NULL
 		for (irow in 1:nrow(in_df)) {
-			event_id <- 
-			start_time <- 
-			end_time <-
-			fire_area <- 
-			fire_ecoregion <-
-			fire_lat <- 
-			fire_lon <- 
-			pm25_tot <-
-			pm_tot <-
-			pm25_tot_flam <- 
-			pm25_tot_smold <-
-			pm25_tot_resid <- 
-			heat_tot <- 
-			heat_tot_flam <- 
-			heat_tot_smold <-
-			heat_tot_resid <-
+			event_id <- paste0("id", sample(1e12, 1))
+			start_time <- in_df$start_time
+			end_time <- in_df$end_time
+			fire_area <- in_df$area
+			fire_ecoregion <- "western"
+			fire_lat <- in_df$lat
+			fire_lon <- in_df$lon
+			pm25_tot <- in_df$pm25
+			pm_tot <- in_df$pm25
+			pm25_tot_flam <- in_df$pm25/3
+			pm25_tot_smold <- in_df$pm25/3
+			pm25_tot_resid <- in_df$pm25/3
+			heat_tot <- in_df$heat/3
+			heat_tot_flam <- in_df$heat/3
+			heat_tot_smold <- in_df$heat/3
+			heat_tot_resid <- in_df$heat/3
 			# Insert data into template
 
 			# Append irow to fire_info_all
